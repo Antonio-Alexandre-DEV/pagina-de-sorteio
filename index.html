@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Sorteio dos herois</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        function onOver(elemento){
+
+            elemento.style.backgroundColor="green";
+        }
+
+
+        function sortear(){
+            let paises=["Brasil", "Italia","Inglatera","França","Belgica"]
+            let np = paises.length;
+            let ns = Math.floor(Math.random()*np);
+            document.getElementById("d").innerHTML = paises[ns];
+        }
+    
+    
+    </script>
+
+</head>
+<body>
+    <div class="container">
+    <h1 id="d">Sorteio dos paises</h1>
+    <div class="img">
+        <img class="img-br" src="./imagens/bandeira-brasil.jpg">
+        <img class="img-br" src="imagens/Bandeira-da-Gra-Bretanha.png">
+        <img class="img-br" src="./imagens/Flag_of_France_(1794–1815,_1830–1974,_2020–present).svg.png">
+        <img class="img-br" src="imagens/download.png">
+        <img class="img-br" src="imagens/D_NQ_NP_787768-MLB44975747777_022021-O.jpg">
+
+    <br><br>
+
+    <button class="btn" onclick="sortear()" onmouseover="onOver(this)">Sortear</button>
+    
+
+</div>
+</div> 
+    <footer>By Antonio Alexandre</footer>
+</body>
+</html>
