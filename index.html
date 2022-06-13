@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
    
-    <title>Sorteio dos paises</title>
+    <title>Sorteio</title>
 
     <link rel="stylesheet" href="style.css">
 
     <script>
 
+           function sortearNumeros(){
+
+            let np = 100;
+            let ns = Math.round(Math.random()*np);
+            document.getElementById("d").innerHTML = ns;
+        }
+
+        
         function onOver(elemento){
 
             elemento.style.backgroundColor="green";
@@ -37,10 +45,11 @@
         <img class="img-br" src="imagens/D_NQ_NP_787768-MLB44975747777_022021-O.jpg">
 
     <br><br>
-
+    <div class="btns">
     <button class="btn" onclick="sortear()" onmouseover="onOver(this)">Sortear</button>
-    
-
+    <button class="btn2" onclick="sortearNumeros()" onmouseover="onOver(this)">sortear numeros </button>
+        
+  </div>
 </div>
 </div> 
     <footer>By Antonio Alexandre</footer>
